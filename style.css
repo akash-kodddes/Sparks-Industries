@@ -18,8 +18,7 @@ html, body{
     justify-content: space-evenly;
     padding: 10px;
     position: fixed;
-    background-color: white;
-    color: black;
+    background-color: black;
     top: 0%;
     width: 100%;
     padding-bottom: 10px;
@@ -28,7 +27,7 @@ html, body{
 
 #nav a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 #nav ul{
