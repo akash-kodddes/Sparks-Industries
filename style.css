@@ -1,88 +1,206 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Eczar&family=Inter&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Inter&family=Poppins&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html, body{
-    height: 100vh;
-    width: 100%;
     font-family: 'Poppins', sans-serif;
 }
 
-#nav{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
-    position: fixed;
-    background-color: black;
-    top: 0%;
-    width: 100%;
-    padding-bottom: 10px;
-
+:root{
+    --bs-dark-color: #1a1d20;
+    --bs-dark-primary:#1c1c1c;
+    --bs-main-color:#fff;
+    --bs-primary-color:#c6c6c6;
+    --secondary-color: #29a9fd;
+    --bs-supporting-color: #C850C0;
 }
 
-#nav a{
+h1{
+    font-size: 3.8rem;
+}
+
+h2{
+    line-height: 3rem;
+    font-weight: 600;
+    font-size: 3.4rem;
+}
+
+p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var( --bs-dark-color);
+    letter-spacing: 0.07rem;
+    line-height: 1.55rem;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+.common-heading{
+    font-size: 2.8rem;
+    font-weight: 500;
+    letter-spacing: 0.01rem;
+}
+
+.common-title{
+    margin-bottom: 4.2rem;
+}
+
+.nav-link{
+color: var(--bs-main-color);
+font-weight: bold;
+}
+
+.nav-link:hover{
+    color: var(--secondary-color);
+}
+
+a{
     text-decoration: none;
     color: white;
 }
 
-#nav ul{
-    display: flex;
+li{
     list-style: none;
 }
 
-#nav ul li{
-    margin-left: 100px;
+.hero-section .container{
+    display: grid;
+    place-content: center;
+    height: inherit;
 }
 
-#hero{
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: end;
-    font-size: 27px;
+.bg-main{
+    height: 80vh;
+    position: relative;
 }
 
-#hero h1{
-    padding: 200px 300px 200px 200px;
+.hero-image{
+    max-width: 100%;
+    height: auto;
+    width: 60%;
+    border-radius: 1rem;
 }
 
-#hero img{
-    height: 610px;
-    width: 1000px;
-    padding-top: 70px;
-    padding-right: 150px;
-    float: right;
+.bg-color{
+    background-color: var(--bs-dark-primary);
 }
 
-#section{
-    margin-top: 30px;
-    padding-top: 50px;
-    display: flex;
-    justify-content:center;
-    background-color: rgba(0, 0, 0, 0.099);
+.services{
+   padding: 6rem 0 3rem 0;
 }
 
-#title h1{
-    font-size: 50px;
+.sub-image{
+    max-width: 100%;
+    height: auto;
+    width: 70%;
+    border-radius: 1rem;
 }
 
-#features{
-    padding-top: 40px;
-    display: flex;
-    justify-content:space-evenly;
+.about-image{
+    height: auto;
+    width: 70%;
+    
+}
+
+@media (max-width: 400px) {
+    .sub-image{
+        max-width: 100%;
+    height: auto;
+    width: 70%;
+    border-radius: 1rem;
+    }
+
+    h1{
+        font-size: 3.4rem;
+    }
+    .para{
+        font-size: 0.65rem;
+    }
+    .Quality li{
+        font-size: 0.8rem;
+    }
+    
+}
+
+.subdue-image{
+    height: auto;
+    width: 45%;
+    border-radius: 1rem;
+}
+
+.Quality{
+    background-image: linear-gradient(rgba(22,22,0,0.8), rgba(22,22,0,0.8)), url(images/overlay-ezgif.com-webp-to-jpg-converter.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.Quality li{
+    margin: 15px 0;
+}
+
+.card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.7s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.card-text{
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.099);
 }
 
-#second-row{
-    padding: 40px 0px;
-    display: flex;
-    justify-content:space-evenly;
+.contact{
+    height: 100vh;
+    padding-top: 100px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.099);
 }
+
+form{
+    background-color: var(--bs-main-color);
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none ;
+    background-color: #f5f5f5;
+    font-size: 16px;
+}
+
+form button{
+    padding: 15px;
+    background: var(--bs-dark-primary);
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
