@@ -50,9 +50,11 @@ p{
 
 .nav-link{
 color: var(--bs-main-color);
-font-weight: bold;
+/* font-weight: bold; */
 }
-
+.active{
+    font-weight: bold;
+}
 .nav-link:hover{
     color: var(--secondary-color);
 }
