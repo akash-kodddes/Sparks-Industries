@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spark Industries</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
     rel="stylesheet"/>
@@ -21,11 +21,11 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="/">Home</a>
               <a class="nav-link active text-white" aria-current="page" ahref="#">About</a>
-              <a class="nav-link" href="services.html">Services</a>
-              <a class="nav-link" href="products.html">Products</a>
-              <a class="nav-link" href="contact.html">Contact Us</a>
+              <a class="nav-link" href="/services">Services</a>
+              <a class="nav-link" href="/products">Products</a>
+              <a class="nav-link" href="/contact-us">Contact Us</a>
             </div>
           </div>
         </div>
@@ -43,7 +43,7 @@
         <div class="row">
           <div class="col-12  col-md-12 col-lg-6">
             <div class="text-centre text-lg-center py-4">
-                <img src="images/line.jpg" alt="" class="sub-image">
+                <img src="{{ url_for('static', filename='images/line.jpg') }}" alt="" class="sub-image">
             </div>
         </div>
             <div class="col-12 col-md-12 col-lg-6 d-flex flex-column justify-content-center align-content-center">
@@ -64,7 +64,7 @@
         <div class="row">
           <div class="col-12  col-md-12 col-lg-6">
             <div class="text-centre text-lg-center py-4">
-                <img src="images/work.jpg" alt="" class="subdue-image">
+                <img src="{{ url_for('static', filename='images/work.jpg') }}" alt="" class="subdue-image">
             </div>
         </div>
             <div class="col-12 col-md-12 col-lg-6 d-flex flex-column justify-content-center align-content-center">
@@ -85,7 +85,7 @@
         <div class="row">
           <div class="col-12  col-md-12 col-lg-6">
             <div class="text-centre text-lg-center py-4">
-                <img src="images/cutter.jpeg" alt="" class="sub-image">
+                <img src="{{ url_for('static', filename='images/cutter.jpeg') }}" alt="" class="sub-image">
             </div>
         </div>
             <div class="col-12 col-md-12 col-lg-6 d-flex flex-column justify-content-center align-content-center">
@@ -109,7 +109,7 @@
           <div class="row">
             <div class="col-12  col-md-12 col-lg-6">
               <div class="text-centre text-lg-center py-3">
-                  <img src="images/enggg.jpg" alt="" class="subdue-image">
+                  <img src="{{ url_for('static', filename='images/enggg.jpg') }}" alt="" class="subdue-image">
               </div>
           </div>
               <div class="col-12 col-md-12 col-lg-6 d-flex flex-column justify-content-center align-content-center">
@@ -126,11 +126,11 @@
 
   <footer class="py-3 my-4">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Services</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Proudcts</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
+      <li class="nav-item"><a href="/" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="/about" class="nav-link px-2 text-body-secondary">About</a></li>
+      <li class="nav-item"><a href="/services" class="nav-link px-2 text-body-secondary">Services</a></li>
+      <li class="nav-item"><a href="/products" class="nav-link px-2 text-body-secondary">Proudcts</a></li>
+      <li class="nav-item"><a href="/contact-us" class="nav-link px-2 text-body-secondary">Contact</a></li>
     </ul>
     <p class="text-center text-body-secondary">© 2023 Spark Industries, Inc</p>
   </footer>
