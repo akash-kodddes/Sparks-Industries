@@ -134,7 +134,7 @@ li{
 }
 
 .Quality{
-    background-image: linear-gradient(rgba(22,22,0,0.8), rgba(22,22,0,0.8)), url(images/overlay-ezgif.com-webp-to-jpg-converter.jpg);
+    background-image: linear-gradient(rgba(22,22,0,0.8), rgba(22,22,0,0.8)), url(/static/images/overlay-ezgif.com-webp-to-jpg-converter.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
